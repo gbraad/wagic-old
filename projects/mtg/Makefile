@@ -2,7 +2,7 @@ OBJS = objs/InteractiveButton.o objs/AbilityParser.o objs/ActionElement.o objs/A
 DEPS = $(patsubst objs/%.o, deps/%.d, $(OBJS))
 
 RESULT = $(shell psp-config --psp-prefix 2> Makefile.cache)
-QMAKE = qmake
+QMAKE = qmake-qt4
 QMAKEFILE = wagic-qt.pro
 ifeq ($(RESULT),)
 DEFAULT_RULE = qt
